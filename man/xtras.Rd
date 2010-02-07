@@ -7,9 +7,6 @@
 \alias{xpnorm}
 \alias{xqnorm}
 \alias{xqqmath}
-\alias{xqqmath.formula}
-\alias{xqqmath.numeric}
-\alias{xqqmath.data.frame}
 \alias{panel.xqqmath}
 \alias{panel.xhistogram}
 \title{
@@ -48,20 +45,17 @@ xpnorm(q, mean = 0, sd = 1, plot = TRUE, verbose = TRUE, digits = 5,
 xqnorm(p, mean = 0, sd = 1, plot = TRUE, verbose = TRUE, digits = 5, 
 	lower.tail = TRUE, log.p = FALSE, ...)
 
-xqqmath(x, 
-...)
+xqqmath(x, data=NULL, panel="panel.xqqmath", ...)
 
-xqqmath.formula(x, data = NULL, panel = panel.xqqmath, ...)
-
-xqqmath.numeric(x, data = NULL, ylab = deparse(substitute(x)), ...)
-
-panel.xqqmath(x, qqmathline = TRUE, idline = FALSE, fitline = FALSE, 
-    slope = sd(x), intercept = mean(x), overlines = FALSE, ..., 
-    lcol = trellis.par.get("add.line")$col, pch = 16, lwd = 2, 
-    lty = 2) 
+panel.xqqmath(x, qqmathline = !(fitline || idline), idline = FALSE, fitline = FALSE, 
+    slope = NULL, intercept = NULL, overlines = FALSE, groups=NULL, ...,
+    col.line = trellis.par.get("add.line")$col, pch = 16, lwd = 2, 
+    lty = 2 ) 
 }
 \arguments{
-  \item{\dots}{ arguments passed to other functions }
+  \item{\dots}{ arguments passed to other functions. }
+
+  \item{data}{a data frame.}
 
   \item{density }{boolean -- should a density curve be overlaid on histogram? }
 
@@ -86,24 +80,25 @@ panel.xqqmath(x, qqmathline = TRUE, idline = FALSE, fitline = FALSE,
   \item{qqline}{boolean.  If TRUE, add a line using \code{panel.qqmathline()}. 
   }
 
-  \item{slope}{ slope for \code{fitline}.  
-  Default value is the mean of the data, which works well
+  \item{slope}{ slope for \code{fitline}.  If NULL (the default)
+  the mean of the data is used, which works well
   for normal-quantile plots but may not be what you want for fitting
   other distributions. }
 
   \item{intercept}{ intercept for \code{fitline}.  
-  	Default value is the standard deviation of the data, which works well
+  If NULL (the default), 
+	the standard deviation of the data is used, which works well
 	for normal-quantile plots but may not be what you want for fitting
 	other distributions. }
-\item{lcol}{like \code{col} but applied only to lines}
+\item{col.line}{like \code{col} but applied only to lines}
 \item{
 q,
 p,
+groups,
 type,
 labels,
 which,
 main,
-ylab,
 pch,
 lwd,
 lty}{as in \code{\link{lattice}} graphics functions}
@@ -132,7 +127,6 @@ verbose,
 digits,
 lower.tail,
 log.p,
-data,
 panel
 }{ to be documented}
 }

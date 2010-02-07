@@ -1,6 +1,6 @@
 read.file <-
-function (file, header = T, na.strings = c("NA", "", ".", "na"), 
-    comment.char = "#", ...) 
+function (file, header = T, na.strings = c("NA", "", ".", "na", 
+    "-"), comment.char = "#", ...) 
 {
     if (!file.exists(file)) {
         return(NULL)

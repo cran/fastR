@@ -23,7 +23,7 @@ data(ncaa2008)
     \item{\code{ascore}}{visiting team's score}
     \item{\code{home}}{home team}
     \item{\code{hscore}}{home team's score}
-    \item{\code{n}}{code indicting games played at neutral sites (n or N) 
+    \item{\code{notes}}{code indicting games played at neutral sites (n or N) 
 	or in tournaments (T)}
     \item{\code{location}}{where game was played}
   }

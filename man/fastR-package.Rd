@@ -13,8 +13,8 @@ by Randall Pruim.
 \tabular{ll}{
 Package: \tab fastR\cr
 Type: \tab Package\cr
-Version: \tab 0.2-2\cr
-Date: \tab 2010-11-26\cr
+Version: \tab 0.2-3\cr
+Date: \tab 2010-11-30\cr
 Depends: \tab lattice, grid\cr
 Suggests: \tab MASS, faraway, Hmisc, DAAG, multcomp, vcd, car, alr3, corrgram, BradleyTerry 
 \cr

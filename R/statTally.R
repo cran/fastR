@@ -17,7 +17,7 @@ function (sample, rdata, FUN, direction = 2, stemplot = dim(rdata)[direction] <
     }
     plot1 <- histogram(~stats, ..., panel = function(x, ...) {
         panel.histogram(x, ...)
-        panel.abline(v = dstat, col = trellis.par.get("add.line")$col, 
+        panel.abline(v = dstat, col = trellis.par.get("plot.line")$col, 
             lwd = 3)
     })
     cat("\tOf the random samples")

@@ -23,7 +23,7 @@ function (bw = FALSE, lty = 1:7)
                   "gray50", "gray20", "gray80", "gray60", "gray40")), 
             superpose.symbol = list(pch = c(16, 15, 18, 1, 3, 
                 6, 0, 5), cex = rep(0.7, 7), col = c("gray30", 
-                "gray70", "gray50", "black", "gray20", "gray80", 
+                "gray70", "black", "gray50", "gray20", "gray80", 
                 "gray60", "gray40")), strip.background = list(alpha = 1, 
                 col = c("gray80", "gray65")), strip.shingle = list(alpha = 1, 
                 col = c("gray60", "gray30")), par.strip.text = list(cex = 0.5)))

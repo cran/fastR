@@ -1,7 +1,7 @@
 \name{airlineArrival}
 \alias{airlineArrival}
 \docType{data}
-\title{ Airline On-Time Arrival Data -- unfinished documentation}
+\title{ Airline On-Time Arrival Data }
 \description{
 Flights categorized by destination city, airline, and whether or not the
 flight was on time.
@@ -15,6 +15,15 @@ flight was on time.
     \item{\code{Airline}}{a factor with levels \code{Alaska} \code{AmericaWest}}
   }
 }
+\source{
+Barnett, Arnold. 1994. ``How numbers can trick you.'' 
+\emph{Technology Review}, vol. 97, no. 7, pp. 38--45.
+}
+\references{
+These and similar data appear in many text books under the topic of 
+Simpson's paradox.
+}
+
 \examples{
 row.perc(xtabs(~Airline+Result, airlineArrival))
 for (city in levels(airlineArrival$Airport)) {

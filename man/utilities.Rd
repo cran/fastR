@@ -2,7 +2,7 @@
 \alias{utilities}
 \alias{utilities2}
 \docType{data}
-\title{ Utility bills }
+\title{ Utilities bills }
 \description{
 Data from utility bills at a residence.
 }

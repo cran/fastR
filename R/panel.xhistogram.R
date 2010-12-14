@@ -1,7 +1,8 @@
 panel.xhistogram <-
 function (x, dcol = trellis.par.get("plot.line")$col, dlwd = 2, 
-    dmath = dnorm, dn = 100, args = NULL, labels = FALSE, density = FALSE, 
-    fit = NULL, start = NULL, type = "density", v, h, ...) 
+    gcol = trellis.par.get("superpose.line")$col, glwd = 2, dmath = dnorm, 
+    dn = 100, args = NULL, labels = FALSE, density = FALSE, fit = NULL, 
+    start = NULL, type = "density", v, h, ...) 
 {
     panel.histogram(x, type = type, ...)
     if (labels) {
@@ -78,12 +79,12 @@ function (x, dcol = trellis.par.get("plot.line")$col, dlwd = 2,
     }
     if (!missing(v)) {
         for (x in v) {
-            panel.abline(v = x)
+            panel.abline(v = x, col = gcol, lwd = glwd)
         }
     }
     if (!missing(h)) {
         for (y in h) {
-            panel.abline(h = y)
+            panel.abline(h = y, col = gcol, lwd = glwd)
         }
     }
 }

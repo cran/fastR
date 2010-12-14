@@ -1,7 +1,7 @@
 \name{mathnoise}
 \alias{mathnoise}
 \docType{data}
-\title{ Test performance and noise -- unfinished documentation}
+\title{ Test performance and noise }
 \description{
 In this experiment, hyperactive and control students were given a mathematics test in
 either a quiet or loud testing environment.
@@ -14,6 +14,11 @@ either a quiet or loud testing environment.
     \item{\code{noise}}{a factor with levels \code{hi} \code{lo}}
     \item{\code{group}}{a factor with levels \code{control} \code{hyper}}
   }
+}
+\source{
+Sydney S. Zentall and Jandira H. Shaw, Effects of classroom noise on perfor- 
+mance and activity of second-grade hyperactive and control children, \emph{Journal 
+of Educational Psychology} 72 (1980), no. 6, 830.
 }
 \examples{
 data(mathnoise)

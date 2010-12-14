@@ -254,7 +254,8 @@ function (x, which = c(1L:3, 5), caption = list("Residuals vs Fitted",
                   caption[[5]]
                 else NULL, sub = if (one.fig) 
                   sub.caption
-                else NULL, panel = function(x, y, model = x...) {
+                else NULL, panel = function(x, y, model = x, 
+                  ...) {
                   panel.abline(h = 0, v = 0, lty = lty[3], col = trellis.par.get("add.line")$col)
                   if (length(cook.levels)) {
                     p <- length(coef(model))

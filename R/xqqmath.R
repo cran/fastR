@@ -1,5 +1,5 @@
 xqqmath <-
-function (x, ...) 
+function (x, data = NULL, panel = "panel.xqqmath", ...) 
 {
-    UseMethod("xqqmath", x)
+    qqmath(x, data = data, panel = panel, ...)
 }

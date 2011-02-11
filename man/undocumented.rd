@@ -1,7 +1,4 @@
 \name{undocumented}
-\alias{xaov}
-\alias{xaov.default}
-\alias{xaov.formula}
 \alias{tdf}
 \alias{dotPlot}
 \alias{panel.dotPlot}
@@ -33,12 +30,6 @@
 \alias{show.poisson}
 \alias{statTally}
 \alias{surround}
-\alias{dot}
-\alias{geolm}
-\alias{project}
-\alias{vlength}
-\alias{to2d}
-\alias{read.file}
 \title{Undocumented functions}
 \description{Documentation is still pending for this functions}
 \author{Randall Pruim}

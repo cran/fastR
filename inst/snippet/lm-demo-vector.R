@@ -1,7 +1,7 @@
 v0 <- rep(1,4); v0
 u0 <- v0/vlength(v0); u0
 v1 <- x - mean(x); v1
-u1 <- v0/vlength(v1); u1
+u1 <- v1/vlength(v1); u1
 #
 # projecting into the model space
 project(y,v0)

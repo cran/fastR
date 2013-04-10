@@ -1,36 +1,43 @@
 \name{undocumented}
-\alias{tdf}
-\alias{dotPlot}
-\alias{panel.dotPlot}
 \alias{funplot}
+\alias{funvec}
 \alias{grid.identify.points}
+\alias{make.rm}
+\alias{multirandom}
 \alias{ntigram}
 \alias{panel.lm}
-\alias{panel.lmbands}
 \alias{panel.smooth}
 \alias{panel.xyplotpoints}
 \alias{panel.xyplotsmooth}
 \alias{pdfplot}
 \alias{pmfhistogram}
 \alias{pmfplot}
+\alias{print.stemplot}
 \alias{probplot}
+\alias{show.fumbles}
+\alias{show.poisson}
 \alias{stemplot}
 \alias{stemplot.data.frame}
 \alias{stemplot.numeric}
-\alias{funvec}
-\alias{givenOrder}
-\alias{make.rm}
-\alias{multirandom}
-\alias{nlmax}
-\alias{nlmin}
-\alias{summary.nlmax}
-\alias{summary.nlmin}
-\alias{print.stemplot}
-\alias{show.fumbles}
-\alias{show.poisson}
-\alias{statTally}
-\alias{surround}
+\alias{undocumented}
 \title{Undocumented functions}
-\description{Documentation is still pending for this functions}
-\author{Randall Pruim}
+\description{
+  These objects are undocumented.
+}
+\details{
+  In many cases, these are depricated in favor of
+  alternative methods (often in the \code{mosaic} package)
+  to obtain the same results but remain in the package to
+  avoid breaking code used in Foundations and Applications
+  of Statistics, the book associated with this package. For
+  example, \code{funplot}, should be replaced by
+  \code{plotFun} and \code{pdfplot}, \code{pmfhistogram},
+  and \code{pmfplot} should be replaced by \code{plotDist}.
+
+  In other cases, the functions are of limited suitability
+  for general use.
+}
+\author{
+  Randall Pruim
+}
 

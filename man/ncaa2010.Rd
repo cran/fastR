@@ -1,34 +1,22 @@
-\name{ncaa2010}
-\alias{ncaa2010}
-\alias{ncaa2009}
-\alias{ncaa2008}
 \docType{data}
+\name{ncaa2010}
+\alias{ncaa2008}
+\alias{ncaa2009}
+\alias{ncaa2010}
 \title{NCAA Division I Basketball Results}
-
+\format{Seven variables describing NCAA Division I basketball games.
+\itemize{ \item{date}{date on which game was played}
+\item{away}{visiting team} \item{ascore}{visiting team's
+score} \item{home}{home team} \item{hscore}{home team's
+score} \item{notes}{code indicting games played at neutral sites (n
+or N) or in tournaments (T)} \item{location}{where game was played}
+}}
+\source{
+  \url{kenpom.com}
+}
 \description{
-Results of NCAA basketball games
+  Results of NCAA basketball games
 }
-\usage{
-data(ncaa2010)
-
-data(ncaa2009)
-
-data(ncaa2008)
-}
-\format{
-  Seven variables describing NCAA Division I basketball games.
-  \describe{
-    \item{\code{date}}{date on which game was played}
-    \item{\code{away}}{visiting team}
-    \item{\code{ascore}}{visiting team's score}
-    \item{\code{home}}{home team}
-    \item{\code{hscore}}{home team's score}
-    \item{\code{notes}}{code indicting games played at neutral sites (n or N) 
-	or in tournaments (T)}
-    \item{\code{location}}{where game was played}
-  }
-}
-\source{ \url{kenpom.com} }
 \examples{
 data(ncaa2010)
 # add some additional variables to the data frame
@@ -44,3 +32,4 @@ ncaa2010$homeTeamWon <- ncaa2010$winner == ncaa2010$home
 ncaa2010$numHomeTeamWon <- -1 + 2 * as.numeric(ncaa2010$homeTeamWon)
 }
 \keyword{datasets}
+

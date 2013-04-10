@@ -1,31 +1,23 @@
+\docType{data}
 \name{corn}
 \alias{corn}
-\docType{data}
-\title{ Corn Yield }
-\description{
-William Gosset analyzed data from an experiment
-comparing the yield of regular and kiln-dried corn.
+\title{Corn Yield}
+\format{A data frame with 11 observations on the following 2 variables.
+\itemize{ \item{reg}{yield of regular corn (lbs/acre)}
+\item{kiln}{yield of kiln-dried corn (lbs/acre)} }}
+\source{
+  These data are also available at DASL, the data and story
+  library (\url{http://lib.stat.cmu.edu/DASL/}).
 }
-\usage{data(corn)}
-\format{
-  A data frame with 11 observations on the following 2 variables.
-  \describe{
-    \item{\code{reg}}{yield of regular corn (lbs/acre)}
-    \item{\code{kiln}}{yield of kiln-dried corn (lbs/acre)}
-  }
+\description{
+  William Gosset analyzed data from an experiment comparing
+  the yield of regular and kiln-dried corn.
 }
 \details{
-Gosset (Student) reported on the results of seeding plots with two different
-kinds of seed. Each type of seed (regular and kiln-dried) was planted in adjacent
-plots, accounting for 11 pairs of "split" plots. 
-}
-
-\source{
-These data are also available at DASL, the data and story library
-(\url{http://lib.stat.cmu.edu/DASL/}).
-}
-\references{
-W.S. Gosset, "The Probable Error of a Mean," Biometrika, 6 (1908), pp 1-25.
+  Gosset (Student) reported on the results of seeding plots
+  with two different kinds of seed. Each type of seed
+  (regular and kiln-dried) was planted in adjacent plots,
+  accounting for 11 pairs of "split" plots.
 }
 \examples{
 corn2 <- stack(corn)
@@ -34,4 +26,9 @@ lm(yield ~ treatment, corn2)
 t.test(yield ~ treatment, corn2)
 t.test(corn$reg,corn$kiln)
 }
+\references{
+  W.S. Gosset, "The Probable Error of a Mean," Biometrika,
+  6 (1908), pp 1-25.
+}
 \keyword{datasets}
+

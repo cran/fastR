@@ -1,41 +1,33 @@
-\name{tastetest}
-\alias{tastetest}
-\alias{taste1}
 \docType{data}
-\title{
-Taste test data
+\name{tastetest}
+\alias{taste1}
+\alias{tastetest}
+\title{Taste test data}
+\format{A data frame with 16 observations on 2 (\code{taste1}) or 4
+(\code{tastetest}) variables.  \itemize{ \item{score}{taste score
+from a group of 50 testers} \item{scr}{a factor with levels
+\code{coarse} \code{fine}} \item{liq}{a factor with levels \code{hi}
+\code{lo}} \item{type}{a factor with levels \code{A} \code{B}
+\code{C} \code{D}} }}
+\source{
+  E. Street and M. G. Carroll, \emph{Preliminary evaluation
+  of a food product}, Statistics: A Guide to the Unknown
+  (Judith M. Tanur et al., eds.), Holden-Day, 1972, pp.
+  220-238.
 }
 \description{
-Tthe results from a study comparing
-different preparation methods for taste test samples.
-}
-\usage{
-data(tastetest)
-
-data(taste1)
-}
-\format{
-  A data frame with 16 observations on 2 (\code{taste1}) or 4
-  (\code{tastetest}) variables.
-  \describe{
-    \item{\code{score}}{taste score from a group of 50 testers}
-    \item{\code{scr}}{a factor with levels \code{coarse} \code{fine}}
-    \item{\code{liq}}{a factor with levels \code{hi} \code{lo}}
-    \item{\code{type}}{a factor with levels \code{A} \code{B} \code{C} \code{D}}
-  }
+  Tthe results from a study comparing different preparation
+  methods for taste test samples.
 }
 \details{
-The samples were prepared for tasting using either a 
-coarse screen or a fine screen, and with either a high or low liquid content.
-A total taste score is recorded for each of 16 groups of 50 testers each.
-Each group had 25 men and 25 women, each of whom scored the samples on a 
-scale from -3 (terrible) to 3 (excellent).  The sum of these individual
-scores is the overall taste score for the group.
-}
-\source{
-E. Street and M. G. Carroll, \emph{Preliminary evaluation of a food product}, 
-Statistics: A Guide to the Unknown (Judith M. Tanur et al., eds.), Holden-Day, 
-1972, pp. 220-238.
+  The samples were prepared for tasting using either a
+  coarse screen or a fine screen, and with either a high or
+  low liquid content. A total taste score is recorded for
+  each of 16 groups of 50 testers each. Each group had 25
+  men and 25 women, each of whom scored the samples on a
+  scale from -3 (terrible) to 3 (excellent).  The sum of
+  these individual scores is the overall taste score for
+  the group.
 }
 \examples{
 data(tastetest)
@@ -46,3 +38,4 @@ xyplot(score~scr,groups=liq,tastetest,type='a')
 summary(score~scr,tastetest)
 }
 \keyword{datasets}
+

@@ -1,3 +1,32 @@
+tryCatch(utils::globalVariables(c('gp')),
+         error=function(e) message('Looks like you should update R.'))
+
+#' Geometric representation of linear model
+#' 
+#' \code{geolm} create a graphical representation of the fit of a linear model.
+#' 
+#' 
+#' @aliases geolm to2d
+#' @param formula a formula as used in \code{\link{lm}}.
+#' @param data a data frame as in \code{\link{lm}}.
+#' @param type character: indicating the type of projection to use to collapse
+#' multi-dimensional data space into two dimensions of the display.
+#' @param version an integer (currently \code{1} or \code{2}).  Which version
+#' of the plot to display.
+#' @param plot a logical: should the plot be displayed?
+#' @param x,y,z numeric.
+#' @param xas,yas,zas numeric vector of length 2 indicating the projection of
+#' \code{c(1,0,0)}, \code{c(0,1,0)}, and \code{c(0,0,1)}.
+#' @param \dots other arguments passed to \code{\link{lm}}
+#' @author Randall Pruim
+#' @seealso \code{\link{lm}}.
+#' @keywords stats
+#' @export
+#' @examples
+#' 
+#' geolm(pollution ~ location, airpollution)
+#' geolm(distance ~ projectileWt, trebuchet2)
+#' 
 geolm <-
 function (formula, data = parent.env(), type = "xz", version = 1, 
     plot = TRUE, ...) 
@@ -34,8 +63,7 @@ function (formula, data = parent.env(), type = "xz", version = 1,
     if (version == 1) {
         pts <- cbind(pts, rep(0, nrow(pts)))
     }
-    d <- data.frame(x = pts[, 1], y = pts[, 2], z = pts[, 3], 
-        gp = rep(letters[1:6], each = 2))
+    d <- data.frame(x = pts[, 1], y = pts[, 2], z = pts[, 3], gp = rep(letters[1:6], each = 2))
     aspect <- c(diff(range(d$y))/diff(range(d$x)), diff(range(d$z))/diff(range(d$x)))
     if (plot) {
         if (version == 1) {
@@ -52,4 +80,32 @@ function (formula, data = parent.env(), type = "xz", version = 1,
         }
     }
     return(model)
+}
+
+
+#' @rdname geolm
+#' @export
+to2d <-
+function (x, y, z, type = NULL, xas = c(0.4, -0.3), yas = c(1, 
+    0), zas = c(0, 1)) 
+{
+    if (type == "yz") {
+        xas = c(0.4, -0.3)
+        yas = c(1, 0)
+        zas = c(0, 1)
+    }
+    if (type == "xy") {
+        zas = c(0.4, 0.3)
+        xas = c(1, 0)
+        yas = c(0, 1)
+    }
+    if (type == "xz") {
+        yas = c(0.4, 0.3)
+        xas = c(1, 0)
+        zas = c(0, 1)
+    }
+    if (length(x) != 3) {
+        x <- c(x[1], y[1], z[1])
+    }
+    return(as.vector(x %*% rbind(xas, yas, zas)))
 }

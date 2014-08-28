@@ -18,6 +18,11 @@
 #' require(fastR)
 #' trellis.par.set(theme=col.fastR())
 #' 
-NULL
+
+#' @import mosaic
+#' @import mosaicData
+#' @import lattice
+#' @import grid
+NA
 
 

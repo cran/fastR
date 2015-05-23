@@ -321,9 +321,9 @@ NULL
 #' 
 #' corn2 <- stack(corn)
 #' names(corn2) <- c('yield','treatment')
-#' lm(yield ~ treatment, corn2)
-#' t.test(yield ~ treatment, corn2)
-#' t.test(corn$reg,corn$kiln)
+#' lm(yield ~ treatment, data = corn2)
+#' t.test(yield ~ treatment, data=corn2)
+#' t.test(corn$reg, corn$kiln)
 #' 
 NULL
 
@@ -468,9 +468,9 @@ NULL
 #' t.test(endurance$Vitamin, endurance$Placebo, paired=TRUE)
 #' t.test(log(endurance$Vitamin), log(endurance$Placebo), paired=TRUE)
 #' t.test(1/endurance$Vitamin, 1/endurance$Placebo, paired=TRUE)
-#' xqqmath( ~ Vitamin - Placebo, endurance)
-#' xqqmath( ~ log(Vitamin) - log(Placebo), endurance)
-#' xqqmath( ~ 1/Vitamin - 1/Placebo, endurance)
+#' xqqmath( ~ Vitamin - Placebo, data = endurance)
+#' xqqmath( ~ log(Vitamin) - log(Placebo), data = endurance)
+#' xqqmath( ~ 1/Vitamin - 1/Placebo, data = endurance)
 #' 
 NULL
 
@@ -509,33 +509,6 @@ NULL
 
 
 
-#' Foundations and Applications of Statistics
-#' 
-#' Data sets and utility functions to accompany \cite{Foundations and
-#' Applications of Statistics: An Introduction Using R} by Randall Pruim.
-#' 
-#' \tabular{ll}{  Package: \tab fastR\cr Type: \tab Package\cr Version: \tab
-#' 0.2-9\cr Date: \tab 2010-12-29\cr Depends: \tab lattice, grid\cr Suggests:
-#' \tab MASS, faraway, Hmisc, DAAG, multcomp, vcd, car, alr3, corrgram,
-#' BradleyTerry \cr License: \tab GPL\cr LazyLoad: \tab yes\cr LazyData: \tab
-#' yes\cr }
-#' 
-#' @name fastR-package
-#' @rdname fastR-package
-#' @aliases fastR-package fastR
-#' @docType package
-#' @author Randall Pruim
-#' 
-#' Maintainer: Randall Pruim <rpruim@@calvin.edu>
-#' @references R. Pruim, \cite{Foundations and Applicaitons of Statistics: An
-#' Introduction Using R}, AMS, 2011.
-#' @keywords package, datasets
-#' @examples
-#' 
-#' require(fastR)
-#' trellis.par.set(theme=col.fastR())
-#' 
-NULL
 
 
 

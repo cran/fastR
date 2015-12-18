@@ -348,7 +348,8 @@ NULL
 #' \code{meadow pipet} \code{pied wagtail} \code{robin} \code{tree pipet}
 #' \code{wren}} }
 #' @references These data are also available from DASL, the data and story
-#' library (\url{http://lib.stat.cmu.edu/DASL/}).
+#' library 
+#' (\url{http://lib.stat.cmu.edu/DASL/}).
 #' @source L.H.C. Tippett, \emph{The Methods of Statistics}, 4th Edition, John
 #' Wiley and Sons, Inc., 1952, p. 176.
 #' @keywords datasets
@@ -700,6 +701,7 @@ NULL
 #' @references Lafferty, M. B. (1993), "OSU scientists get a kick out of sports
 #' controversy", \emph{The Columbus Dispatch} (November, 21, 1993), B7.
 #' @source These data are available from DASL, the data and story library
+# (\url{ftp://sunsite.univie.ac.at/mirrors/lib.stat.cmu.edu/DASL/.index.html}).
 #' (\url{http://lib.stat.cmu.edu/DASL/}).
 #' @keywords datasets
 #' @examples
@@ -840,6 +842,7 @@ NULL
 #' Social Determinant for Children," Research Quarterly for Exercise and Sport,
 #' 63, 418-424.
 #' @source These data are available at DASL, the data and story library
+# (\url{ftp://sunsite.univie.ac.at/mirrors/lib.stat.cmu.edu/DASL/.index.html}).
 #' (\url{http://lib.stat.cmu.edu/DASL/}).
 #' @keywords datasets
 #' @examples
@@ -1410,7 +1413,7 @@ NULL
 #' modelling dispersion in generalized linear models. Environmetrics 10,
 #' 696-709. \url{http://www.statsci.org/smyth/pubs/ties98tr.html}.
 #' @source These data are also available from OzDASL, the Australian Data and
-#' Story Library (\url{http://www.statsci.org}).  (Note: The time measurements
+#' Story Library (\url{http://www.statsci.org/data/}).  (Note: The time measurements
 #' of the data at OzDASL are in units of tens of hours.)
 #' @keywords datasets
 #' @examples
@@ -1455,7 +1458,7 @@ NULL
 #' Physical Education and Recreation at the Virginia Polytechnic Institute and
 #' State University, 1983.
 #' @source These data are also available at OzDASL
-#' (\url{http://www.statsci.org}).
+#' (\url{http://www.statsci.org/data/}).
 #' @keywords datasets
 #' @examples
 #' 
@@ -1562,6 +1565,7 @@ NULL
 #' @references Hirsch, A. R., and Johnston, L. H. "Odors and Learning," Smell
 #' \& Taste Treatment and Research Foundation, Chicago.
 #' @source These data are also available at DASL, the data and story library
+# (\url{ftp://sunsite.univie.ac.at/mirrors/lib.stat.cmu.edu/DASL/.index.html}).
 #' (\url{http://lib.stat.cmu.edu/DASL/}).
 #' @keywords datasets
 #' @examples
@@ -1604,7 +1608,7 @@ NULL
 #' usage and data collection} \item{Weight}{ weight of bar of soap (in
 #' grams) } }
 #' @source Data collected by Rex Boggs and available from OzDASL
-#' (\url{http://www.statsci.org/data/index.html}).
+#' (\url{http://www.statsci.org/data/}).
 #' @keywords datasets
 #' @examples
 #' 
@@ -1675,6 +1679,7 @@ NULL
 #' (\code{hi} or \code{lo})} \item{freq}{ whether subject stepped
 #' \code{fast}, \code{medium}, or \code{slow}} }
 #' @source These data are available at DASL, the data and story library
+# (\url{ftp://sunsite.univie.ac.at/mirrors/lib.stat.cmu.edu/DASL/.index.html}).
 #' (\url{http://lib.stat.cmu.edu/DASL/}).
 #' @keywords datasets
 #' @examples
@@ -1710,7 +1715,8 @@ NULL
 #' 
 #' Cleveland, W. S. \emph{Visualizing Data}. 1993.
 #' @source These data are available at DASL, the data and story library
-#' (\url{http://lib.stat.cmu.edu/DASL/}.
+# (\url{ftp://sunsite.univie.ac.at/mirrors/lib.stat.cmu.edu/DASL/.index.html}.
+#' (\url{http://lib.stat.cmu.edu/DASL/}).
 #' @keywords datasets
 #' @examples
 #' 
@@ -1807,6 +1813,7 @@ NULL
 #' @references R. D. Stichler, G. G. Richey, and J. Mandel, "Measurement of
 #' Treadware of Commercial Tires", \emph{Rubber Age}, 73:2 (May 1953).
 #' @source These data are available at DASL, the Data and Story Library
+# (\url{ftp://sunsite.univie.ac.at/mirrors/lib.stat.cmu.edu/DASL/.index.html}).
 #' (\url{http://lib.stat.cmu.edu/DASL/}).
 #' @keywords datasets
 #' @examples
@@ -1963,6 +1970,7 @@ NULL
 #' \item{labor68}{ percent of women in labor force in 1968} }
 #' @source These data are from the United States Department of Labor Statistics
 #' and are also available at DASL, the Data and Story Library
+# (\url{ftp://sunsite.univie.ac.at/mirrors/lib.stat.cmu.edu/DASL/.index.html}).
 #' (\url{http://lib.stat.cmu.edu/DASL/}).
 #' @keywords datasets
 #' @examples

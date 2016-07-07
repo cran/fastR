@@ -9,15 +9,15 @@ Colum-wise variances and standard deviations of a matrix
 }
 
 \usage{
-colVars(x, center = NULL, std = FALSE)
+colVars(x, suma = NULL, std = FALSE)
 }
 
 \arguments{
 \item{x}{
 A matrix with the data.
 }
-\item{center}{
-If you already have the mean vector supply it, otherwise leave it NULL.
+\item{suma}{
+If you already have the column sums vector supply it, otherwise leave it NULL.
 }
 \item{std}{
 A boolean variable specyfying whether you want the variances (FALSE) or the standard deviations (TRUE) of each column.

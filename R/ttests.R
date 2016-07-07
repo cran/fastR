@@ -8,10 +8,10 @@ ttests <- function(x, ina, paired = FALSE) {
 
     m1 <- colMeans(x1)
     m2 <- colMeans(x2)
-    s1 <- colVars(x1, center = m1)
-    s2 <- colVars(x2 ,center = m2)
+    s1 <- colVars(x1)
+    s2 <- colVars(x2)
 
-    n1 <- sum(ina == 1)
+    n1 <- sum( ina == 1 )
     n2 <- length(ina) - n1
     f1 <- s1 / n1
     f2 <- s2 / n2
@@ -37,7 +37,7 @@ ttests <- function(x, ina, paired = FALSE) {
       z <- x1 - x2
 
       m <- colMeans(z)
-      s <- colVars(z, center = m)
+      s <- colVars(z)
       stat <- m / sqrt(s/n)
       pvalue <- 2 * pt( abs(stat), n - 1, lower.tail = FALSE )
       result <- cbind(stat, pvalue)

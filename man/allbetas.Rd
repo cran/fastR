@@ -7,15 +7,18 @@
 }
 
 \usage{
-allbetas(y, x)
+allbetas(y, x, pvalue = FALSE)
 }
 
 \arguments{
 \item{y}{
-A numerical vector with the response variable.
+A numerical vector with the response variable. If the y contains proportions or percentages, i.e. values between 0 and 1, the logit transformation is applied first and the transformed data are used.
 }
 \item{x}{
 A matrix with the data, where rows denotes the observations and the columns contain the independent variables.
+}
+\item{pvalue}{
+If you want a hypothesis test that each slope (beta coefficient) is equal to zero set this equal to TRUE. It will also produce all the correlations between y and x.
 }
 }
 
@@ -42,7 +45,7 @@ R implementation and documentation: Michail Tsagris <mtsagris@yahoo.gr> and Mano
 %}
 
 \seealso{
-\code{\link{cova}, \link{cora}
+\code{\link{correls}, \link{univglms}, \link{cova}, \link{cora}
 }
 }
 

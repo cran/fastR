@@ -52,15 +52,15 @@ R implementation and documentation: Michail Tsagris <mtsagris@yahoo.gr> and Mano
 }
 
 \examples{
-x <- matrix( rnorm(10000 * 100), ncol = 100 )
+x <- matrix( rnorm(10000 * 200), ncol = 200 )
 m <- colMeans(x)
 s <- cov(x)
-system.time( mahalanobis(x, m, s) )
 system.time( mahala(x, m, s) )
+system.time( mahalanobis(x, m, s) )
 a1 <- mahalanobis(x, m, s)
 a2 <- mahala(x, m, s)
 all.equal(a1, a2)
 }
 
-\keyword{ Column-wise variances }
+\keyword{ Mahalanobis distance }
 

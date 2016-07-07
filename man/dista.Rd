@@ -61,5 +61,5 @@ system.time( as.matrix( dist( rbind(xnew, x) ) ) )
 
 }
 
-\keyword{ Column-wise variances }
+\keyword{ Distances }
 

@@ -22,7 +22,7 @@ A matrix with data. It has to be matrix, if it is data.frame for example the fun
 }
 
 \details{
-The calculations take place faster than the built-in functions \code{\link{cov}}\code{\link{cor}}. We found this method in \href{http://stackoverflow.com/questions/18964837/fast-correlation-in-r-using-c-and-parallelization}{stackoverflow}.
+The calculations take place faster than the built-in functions \code{\link{cov}}\code{\link{cor}}. We found this method in \href{http://stackoverflow.com/questions/18964837/fast-correlation-in-r-using-c-and-parallelization}{stackoverflow}. This is true if the number of variables is high, say from 500 and above. For less variables, it's better to use the R's built-in function.
 }
 
 \value{
@@ -36,7 +36,7 @@ Shabalin, A.A. (2012). Matrix eQTL: Ultra fast eQTL analysis via large matrix op
 \author{
 Michail Tsagris
 
-R implementation and documentation: Michail Tsagris <mtsagris@yahoo.gr> and Giorgos Athineou <athineou@csd.uoc.gr>
+R implementation and documentation: Michail Tsagris <mtsagris@yahoo.gr> and Manos Papadakis <papadakm95@gmail.com>.
 }
 
 %\note{
@@ -62,4 +62,4 @@ system.time( for (i in 1:10000) cova(x) )
 system.time( for (i in 1:10000) cov(x) )
 }
 
-\keyword{ \eqn{\alpha}-transformation }
+\keyword{ Covariance matrix }

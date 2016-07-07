@@ -1,9 +1,9 @@
-colVars <- function(x, center = NULL, std = FALSE) {
+colVars <- function(x, suma = NULL, std = FALSE) {
   ##  x is a matrix
   ##  if you want standard deviations set std = TRUE
 
-  if ( !is.null(center) ) {
-    m <- center
+  if ( !is.null(suma) ) {
+    m <- suma
   } else {
     m <- colSums(x)
   }
